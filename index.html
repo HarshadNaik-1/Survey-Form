@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Survey Form</title>
+    <link rel="stylesheet"  href="styles.css">
+</head>
+
+<body>
+    <h1 id="title"> Climate Change</h1>
+    <p id="description">Climate change opinions around the globe.</p>
+
+    <div class="container">
+        <form id="survey-form" name="survey-form">
+
+            <div id="name-field">
+                <label for="name" id="name-label">Name:</label> 
+                <input id="name" name="name" placeholder="Enter your name" required="" type="text">
+            </div><br>
+
+            <div id="email-field">
+                <label for="email" id="email-label">E-mail:</label> 
+                <input id="email" name="email" placeholder="Enter your email" required="" type="email">
+            </div><br>
+
+            <div id="age">
+                <label for="age" id="number-label">Age:</label> 
+                <input id="number" max="80" min="14" name="age" placeholder="Age" required="" type="number">
+            </div><br>
+
+            <div id="radio-buttons">
+                <label for="radiolist" id="radiolist-label">Gender:</label>
+                <div id="radiolist" style="text-align: left; padding: 0px 0px 0px 0px;">
+                    <p><label for="Male"><input id="Male" name="radio-buttons" type="radio" value= "Male">Male</label></p>
+                    <p><label for="Female"><input id="Female" name="radio-buttons" type="radio" value="Female">Female</label></p>
+                    <p><label for="Prefer not to say"><input id="Prefer not to say" name="radio-buttons" type= "radio" value="Prefer not to say">Prefer not to say</label></p>
+                </div>
+            </div>
+
+            <div id="dropdown">
+                <label for="choice" id="choice-label">Currently your:</label>
+                <select id="choice">
+                    <option disabled selected> Select an option</option>
+                    <option>Student</option>
+                    <option>Intern</option>
+                    <option>Employed</option>
+                    
+                </select>
+                
+            </div><br>
+
+            <div id="checkboxes">
+                <label for="opinions" id="opinions-label">Why do we need to act now? <br>
+                    <p style="font-family: monospace; font-size: 15px;">(Check all that apply)</p></label>
+
+                    <div id="checklist" style="text-align: left; padding: 0px 0px 10px 0px;">
+                        <p><label for="options"><input id="options" name="checkboxes" type="checkbox" value= "Earth is our only home.">It is our only home.</label></p>
+
+                        <p><label for="options"><input id="options" name="checkboxes" type="checkbox" value= "It can lead to extreme weather conditions.">It can lead to extreme weather conditions.</label></p>
+
+                        <p><label for="options"><input id="options" name="checkboxes" type="checkbox" value="Wide-spread of diseases."></label>Wide-spread of diseases.</p>
+
+                        <p><label for="options"><input id="options" name="checkboxes" type="checkbox" value="Rise in sea-levels.">Rise in sea-levels.</label></p>
+
+                        <p><label for="options"><input id="options" name="checkboxes" type="checkbox" value="More droughts and heat waves."></label>More droughts and heat waves.</p>
+                    </div>
+                </div>
+
+                <div id="textarea">
+                    <label for="textarea" id="textarea-label">Please enter your text here:</label>
+                    <textarea style="border-radius: 4px;" cols="50" rows="4" name="textarea" placeholder="Enter your comments here..."></textarea>
+                    
+                </div>
+
+                <button class="button" id="submit">Submit</button>
+
+
+
+            </form>
+        </div>
+    </body>
+    </html>
